@@ -15,7 +15,7 @@
 body {
   margin: 0;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  /*background: url(Homepage.png) top center no-repeat;*/
+  /*background: url(/Homepage.png) top center no-repeat;*/
 }
 
 a {
@@ -79,14 +79,52 @@ header img {
   width: 221px;
   height: 52px;
   color: #ffff;
-  font-size: 20px;
+  font-size: 15px;
   border-radius: 25px 25px;
   border: none;
+  cursor: pointer;
 }
 
 aside {
-  background-color: antiquewhite;
+  /*background-color: antiquewhite;*/
   margin-top: 45px;
+  padding-left: 35px;
+}
+
+aside .order {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+aside .order button {
+  margin-top: 26px;
+  background-color: var(--gray);
+  width: 350px;
+  height: 62px;
+  color: black;
+  font-size: 17px;
+  font-weight: bold;
+  border-radius: 15px 15px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 22px;
+}
+
+aside .order button i:first-child {
+  color: var(--purple);
+  font-size: 22px;
+}
+aside .order button i:nth-child(2) {
+  color: grey;
+  font-size: 20px;
+}
+
+aside .order button b {
+  color: var(--purple);
 }
 
 footer {
@@ -116,3 +154,9 @@ footer ul {
 footer li {
   margin-top: 10px;
 }
+
+/*aside,
+footer {
+  padding-left: 25px;
+  /*padding-right: 25px;
+}*/
