@@ -13,7 +13,7 @@
 }
 
 body {
-  margin: 0;
+  /*margin: 0;*/
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   /*background: url(/Homepage.png) top center no-repeat;*/
 }
@@ -34,16 +34,19 @@ header {
 header img {
   height: 28px;
   width: auto;
-  margin-top: 22px;
+  margin-top: 15px;
 }
 
 .container {
-  max-width: 600px;
-  margin: 0 auto;
+  max-width: 1330px;
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
 }
 
 .location {
-  background-color: var(--gray);
+  /*background-color: var(--gray);*/
+  background-color: #99e2d0;
 
   /* es recomendable?*/
   height: 340px;
@@ -86,9 +89,9 @@ header img {
 }
 
 aside {
-  /*background-color: antiquewhite;*/
-  margin-top: 45px;
-  padding-left: 35px;
+  background-color: antiquewhite;
+  /*margin-top: 45px;*/
+  /*padding-left: 35px;*/
 }
 
 aside .order {
@@ -127,8 +130,36 @@ aside .order button b {
   color: var(--purple);
 }
 
+main {
+  /*margin-top: 66px;*/
+  /*padding-right: 20px;
+  padding-left: 40px;*/
+  /*background-color: var(--gray);*/
+  background-color: #9356dc;
+}
+
+main h3 {
+  padding-top: 57px;
+}
+
+main img {
+  border-radius: 15px 15px 0px 0px;
+  height: 181px;
+  width: 350px;
+  padding-top: 7px;
+  object-fit: cover;
+}
+
+main .restaurant {
+  padding: 1px 12px;
+  border-radius: 0px 0px 15px 15px;
+  background-color: white;
+  width: 350px;
+}
+
 footer {
-  margin-top: 60px;
+  /*margin-top: 60px;*/
+  background-color: #ff79da;
 }
 
 footer .container {
@@ -154,9 +185,10 @@ footer ul {
 footer li {
   margin-top: 10px;
 }
-
-/*aside,
+.location .map,
+aside,
+main,
 footer {
   padding-left: 25px;
-  /*padding-right: 25px;
-}*/
+  padding-right: 25px;
+}
