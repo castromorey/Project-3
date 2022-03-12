@@ -41,12 +41,12 @@ header img {
   max-width: 1330px;
   display: flex;
   flex-direction: column;
-  gap: 27px;
+  gap: 34px;
 }
 
 .location {
-  /*background-color: var(--gray);*/
-  background-color: #99e2d0;
+  background-color: var(--gray);
+  /*background-color: #99e2d0;*/
 
   /* es recomendable?*/
   height: 340px;
@@ -56,7 +56,7 @@ header img {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 9px;
+  /*margin-top: 9px;*/
   background-color: var(--dark-gray);
 }
 
@@ -89,7 +89,7 @@ header img {
 }
 
 aside {
-  background-color: antiquewhite;
+  /*background-color: antiquewhite;*/
   /*margin-top: 45px;*/
   /*padding-left: 35px;*/
 }
@@ -134,12 +134,16 @@ main {
   /*margin-top: 66px;*/
   /*padding-right: 20px;
   padding-left: 40px;*/
-  /*background-color: var(--gray);*/
-  background-color: #9356dc;
+  background-color: var(--gray);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  /*background-color: #9356dc;*/
+  /*padding-bottom: 20px;*/
 }
 
 main h3 {
-  padding-top: 57px;
+  padding-top: 25px;
 }
 
 main img {
@@ -151,15 +155,56 @@ main img {
 }
 
 main .restaurant {
+  display: flex;
   padding: 1px 12px;
   border-radius: 0px 0px 15px 15px;
   background-color: white;
   width: 350px;
+  /*position: relative;*/
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  cursor: pointer;
+  padding-top: 5px;
+}
+
+main .restaurant h4 {
+  margin: 0;
+  flex-basis: 72%;
+}
+
+main .restaurant p {
+  margin-bottom: 18px;
+  margin-top: 2px;
+}
+
+main .restaurant input {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+main .restaurant input:checked + i {
+  color: var(--purple);
+  /* background-color: #9356dc;*/
+}
+
+main .restaurant i {
+  display: flex;
+  font-size: 24px;
+  color: #dcdcdc;
+  /* position: absolute;*/
+  cursor: pointer;
 }
 
 footer {
   /*margin-top: 60px;*/
-  background-color: #ff79da;
 }
 
 footer .container {
