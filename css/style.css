@@ -120,6 +120,7 @@ aside .order button {
 aside .order button i:first-child {
   color: var(--purple);
   font-size: 22px;
+  margin-left: -15px;
 }
 aside .order button i:nth-child(2) {
   color: grey;
@@ -128,6 +129,7 @@ aside .order button i:nth-child(2) {
 
 aside .order button b {
   color: var(--purple);
+  /*background-color: #9356dc;*/
 }
 
 main {
@@ -192,48 +194,59 @@ main .restaurant input {
 
 main .restaurant input:checked + i {
   color: var(--purple);
-  /* background-color: #9356dc;*/
 }
 
 main .restaurant i {
   display: flex;
   font-size: 24px;
-  color: #dcdcdc;
+  color: gray;
+  /*background-color: #9356dc;*/
   /* position: absolute;*/
   cursor: pointer;
 }
 
 footer {
   /*margin-top: 60px;*/
+  color: #ffff;
 }
 
-footer .container {
-  background-color: black;
-  color: #f5f5f5;
+footer .container2 {
+  background-color: #303030;
   padding: 20px 0px;
 }
 
-footer .container i {
+footer .container2 i {
   margin-right: 10px;
 }
 
+footer .container2 b {
+  margin-right: 8px;
+  font-size: 13px;
+}
+
 footer div h3 {
-  margin-left: 40px;
   font-style: italic;
   font-weight: bold;
 }
 
 footer ul {
   list-style: none;
+  padding: 0;
 }
 
 footer li {
   margin-top: 10px;
 }
+footer a {
+  color: #ffff;
+}
 .location .map,
 aside,
 main,
-footer {
+footer .container2 {
   padding-left: 25px;
   padding-right: 25px;
+}
+
+@media screen and (min-width: 768px) {
 }
