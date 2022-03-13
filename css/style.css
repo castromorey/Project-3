@@ -34,6 +34,7 @@ header img {
   height: 28px;
   width: auto;
   margin-top: 15px;
+  margin-bottom: 10px;
 }
 
 .container {
@@ -237,7 +238,7 @@ footer .container2 {
   }
   aside .order {
     flex-direction: row;
-    justify-content: center;
+    /*justify-content: center;*/
     gap: 18px;
   }
 
@@ -295,4 +296,28 @@ footer .container2 {
 }
 
 @media screen and (min-width: 992px) {
+  aside .order {
+    justify-content: space-between;
+  }
+
+  main {
+    flex-direction: row;
+    /*flex-wrap: wrap;*/
+    /*align-items: center;*/
+    /* gap: 25px;*/
+    justify-content: space-between;
+  }
+
+  main h3 {
+    flex-basis: 80%;
+  }
+
+  main img {
+    height: 245px;
+    width: 305px;
+  }
+
+  main .restaurant {
+    width: 305px;
+  }
 }
