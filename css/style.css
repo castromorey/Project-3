@@ -13,7 +13,6 @@
 }
 
 body {
-  /*margin: 0;*/
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   /*background: url(/Homepage.png) top center no-repeat;*/
 }
@@ -46,7 +45,6 @@ header img {
 
 .location {
   background-color: var(--gray);
-  /*background-color: #99e2d0;*/
 
   /* es recomendable?*/
   height: 340px;
@@ -56,7 +54,6 @@ header img {
   display: flex;
   align-items: center;
   justify-content: center;
-  /*margin-top: 9px;*/
   background-color: var(--dark-gray);
 }
 
@@ -86,12 +83,6 @@ header img {
   border-radius: 25px 25px;
   border: none;
   cursor: pointer;
-}
-
-aside {
-  /*background-color: antiquewhite;*/
-  /*margin-top: 45px;*/
-  /*padding-left: 35px;*/
 }
 
 aside .order {
@@ -129,19 +120,14 @@ aside .order button i:nth-child(2) {
 
 aside .order button b {
   color: var(--purple);
-  /*background-color: #9356dc;*/
 }
 
 main {
-  /*margin-top: 66px;*/
-  /*padding-right: 20px;
-  padding-left: 40px;*/
   background-color: var(--gray);
   display: flex;
   flex-direction: column;
   gap: 10px;
-  /*background-color: #9356dc;*/
-  /*padding-bottom: 20px;*/
+  padding-bottom: 25px;
 }
 
 main h3 {
@@ -162,7 +148,6 @@ main .restaurant {
   border-radius: 0px 0px 15px 15px;
   background-color: white;
   width: 350px;
-  /*position: relative;*/
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
@@ -200,8 +185,6 @@ main .restaurant i {
   display: flex;
   font-size: 24px;
   color: gray;
-  /*background-color: #9356dc;*/
-  /* position: absolute;*/
   cursor: pointer;
 }
 
@@ -244,9 +227,72 @@ footer a {
 aside,
 main,
 footer .container2 {
-  padding-left: 25px;
-  padding-right: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 @media screen and (min-width: 768px) {
+  .container {
+    margin: 0 auto;
+  }
+  aside .order {
+    flex-direction: row;
+    justify-content: center;
+    gap: 18px;
+  }
+
+  aside .order button {
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0;
+    gap: 12px;
+  }
+
+  aside .order button i:first-child {
+    margin-left: -10px;
+  }
+
+  main {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  main .restaurant {
+    width: 374px;
+  }
+
+  main h3 {
+    flex-basis: 55%;
+  }
+
+  main img {
+    height: 188px;
+    width: 374px;
+  }
+
+  footer .container2 {
+    padding: 0px 0px 23px 0px;
+  }
+
+  footer h3 {
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  footer .container2 ul {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  footer .container2 i {
+    margin-right: 3px;
+  }
+
+  footer .container2 b {
+    margin-right: 3px;
+  }
+}
+
+@media screen and (min-width: 992px) {
 }
