@@ -86,11 +86,11 @@ header img {
   cursor: pointer;
 }
 
-aside .order {
+/*aside .order {
   display: flex;
   flex-direction: column;
   gap: 10px;
-}
+}*/
 
 aside .order button {
   margin-top: 26px;
@@ -125,12 +125,15 @@ aside .order button b {
 
 main {
   background-color: var(--gray);
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  padding-bottom: 25px;
 }
 
+main .submain {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  padding-bottom: 25px;
+}
 main h3 {
   padding-top: 25px;
 }
@@ -237,8 +240,7 @@ footer .container2 {
     margin: 0 auto;
   }
   aside .order {
-    flex-direction: row;
-    /*justify-content: center;*/
+    display: flex;
     gap: 18px;
   }
 
@@ -253,19 +255,19 @@ footer .container2 {
     margin-left: -10px;
   }
 
-  main {
+  main .submain {
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 15px;
   }
 
   main .restaurant {
     width: 374px;
   }
 
-  main h3 {
+  /*main h3 {
     flex-basis: 55%;
-  }
+  }*/
 
   main img {
     height: 188px;
@@ -302,14 +304,7 @@ footer .container2 {
 
   main {
     flex-direction: row;
-    /*flex-wrap: wrap;*/
-    /*align-items: center;*/
-    /* gap: 25px;*/
     justify-content: space-between;
-  }
-
-  main h3 {
-    flex-basis: 80%;
   }
 
   main img {
