@@ -14,6 +14,7 @@
 
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0 auto;
   /*background: url(/Homepage.png) top center no-repeat;*/
 }
 
@@ -42,6 +43,7 @@ header img {
   display: flex;
   flex-direction: column;
   gap: 34px;
+  background-color: var(--gray);
 }
 
 .location {
@@ -92,21 +94,26 @@ header img {
   gap: 10px;
 }*/
 
+aside {
+  background-color: #ffff;
+}
+
 aside .order button {
   margin-top: 26px;
   background-color: var(--gray);
-  width: 350px;
-  height: 62px;
+  width: 372px;
+  height: 80px;
   color: black;
   font-size: 17px;
   font-weight: bold;
-  border-radius: 15px 15px;
+  border-radius: 25px 25px;
   border: none;
   cursor: pointer;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   gap: 22px;
+  margin-bottom: 25px;
 }
 
 aside .order button i:first-child {
@@ -119,29 +126,26 @@ aside .order button i:nth-child(2) {
   font-size: 20px;
 }
 
-aside .order button b {
+/*aside .order button b {
   color: var(--purple);
-}
-
-main {
-  background-color: var(--gray);
-}
+}*/
 
 main .submain {
+  /*background-color: var(--gray);*/
   display: flex;
   flex-direction: column;
   gap: 15px;
   align-items: center;
   padding-bottom: 25px;
 }
-main h3 {
+/*main h3 {
   padding-top: 25px;
-}
+}*/
 
 main img {
   border-radius: 15px 15px 0px 0px;
   height: 181px;
-  width: 350px;
+  width: 100%;
   padding-top: 7px;
   object-fit: cover;
 }
@@ -151,7 +155,7 @@ main .restaurant {
   padding: 1px 12px;
   border-radius: 0px 0px 15px 15px;
   background-color: white;
-  width: 350px;
+  width: 364px;
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
@@ -258,11 +262,12 @@ footer .container2 {
   main .submain {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     flex-wrap: wrap;
   }
 
   main .restaurant {
-    width: 374px;
+    width: 350px;
   }
 
   /*main h3 {
@@ -271,7 +276,7 @@ footer .container2 {
 
   main img {
     height: 188px;
-    width: 374px;
+    width: 100%;
   }
 
   footer .container2 {
