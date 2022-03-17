@@ -48,8 +48,6 @@ header img {
 
 .location {
   background-color: var(--gray);
-
-  /* es recomendable?*/
   height: 340px;
 }
 
@@ -86,14 +84,17 @@ header img {
   border-radius: 25px 25px;
   border: none;
   cursor: pointer;
+  transform: scale(0.8);
+  transition-property: transform;
+  transition-duration: 1000ms;
+  box-shadow: 6px 6px 6px 0px rgb(0 0 0 / 15%);
 }
 
-/*aside .order {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}*/
-
+.content button:hover {
+  transform: scale(1);
+  background: linear-gradient(90deg, #ff72c0, #755bea);
+  box-shadow: 8px 8px 6px #b8d6f7;
+}
 aside {
   background-color: #ffff;
 }
@@ -101,9 +102,8 @@ aside {
 aside .order button {
   margin-top: 26px;
   background-color: var(--gray);
-  width: 372px;
+  width: 370px;
   height: 80px;
-  color: black;
   font-size: 17px;
   font-weight: bold;
   border-radius: 25px 25px;
@@ -114,17 +114,42 @@ aside .order button {
   align-items: center;
   gap: 22px;
   margin-bottom: 25px;
+  transition: all 600ms;
+  box-shadow: 6px 6px 6px 0px rgb(0 0 0 / 9%);
+}
+
+aside i {
+  color: grey;
+}
+
+aside .order button:hover,
+aside .order button:hover i {
+  transform: translate(-5px, -5px);
+  background-color: #dfd6eb;
+  color: var(--purple);
+}
+aside .order button:hover {
+  box-shadow: 8px 8px 6px #d3e2f1;
+}
+
+aside .order button span {
+  color: #000;
 }
 
 aside .order button i:first-child {
   color: var(--purple);
   font-size: 22px;
   margin-left: -15px;
+  background-color: transparent;
 }
-aside .order button i:nth-child(2) {
-  color: grey;
+
+aside i:nth-child(2) {
   font-size: 20px;
 }
+/*aside .order button i:nth-child(2) {
+  color: grey;
+  font-size: 20px;
+}*/
 
 /*aside .order button b {
   color: var(--purple);
@@ -138,28 +163,45 @@ main .submain {
   align-items: center;
   padding-bottom: 25px;
 }
-/*main h3 {
-  padding-top: 25px;
-}*/
+.card {
+  position: relative;
+  cursor: pointer;
+}
+
+.card span {
+  position: absolute;
+  top: 21px;
+  right: 15px;
+  background-color: tomato;
+  color: #fff;
+  padding: 5px;
+  width: 75px;
+  font-size: 15px;
+  text-align: center;
+  color: mediumseagreen;
+  background-color: #9cd6d6;
+  font-weight: bold;
+}
 
 main img {
-  border-radius: 15px 15px 0px 0px;
+  border-radius: 20px 20px 0px 0px;
   height: 181px;
   width: 100%;
   padding-top: 7px;
   object-fit: cover;
+  display: block;
 }
 
 main .restaurant {
   display: flex;
+  flex-direction: column;
   padding: 1px 12px;
   border-radius: 0px 0px 15px 15px;
   background-color: white;
   width: 364px;
   justify-content: space-between;
   flex-wrap: wrap;
-  align-items: center;
-  cursor: pointer;
+  /*cursor: pointer;*/
   padding-top: 5px;
 }
 
@@ -172,8 +214,12 @@ main .restaurant p {
   margin-bottom: 18px;
   margin-top: 2px;
 }
-
-main .restaurant input {
+.card label {
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
+}
+.card input {
   position: absolute !important;
   width: 1px !important;
   height: 1px !important;
@@ -185,15 +231,22 @@ main .restaurant input {
   border: 0 !important;
 }
 
-main .restaurant input:checked + i {
-  color: var(--purple);
-}
-
-main .restaurant i {
+.card i {
   display: flex;
   font-size: 24px;
   color: gray;
   cursor: pointer;
+}
+
+.card input + i + i {
+  display: none;
+}
+.card input:checked + i {
+  display: none;
+}
+.card input:checked + i + i {
+  display: block;
+  color: var(--purple);
 }
 
 footer {
@@ -207,7 +260,7 @@ footer .container2 {
 }
 
 footer .container2 i {
-  margin-right: 10px;
+  width: 27px;
 }
 
 footer .container2 b {
