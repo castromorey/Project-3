@@ -59,6 +59,8 @@ header img {
   display: flex;
   flex-direction: column;
   gap: 90px;
+  margin: 0 auto;
+  background-color: var(--gray);
 }
 
 .location {
@@ -224,7 +226,6 @@ main .restaurant {
 
 .opening .restaurant {
   padding: 1px 12px;
-  /*background-color: rgb(160, 76, 76);*/
   border-radius: 36px 36px 0px 0px;
   position: absolute;
   width: 100%;
@@ -282,8 +283,6 @@ main .restaurant p {
   cursor: pointer;
 }
 
-/*for pallette*/
-
 .card input + i + i {
   display: none;
 }
@@ -297,25 +296,41 @@ main .restaurant p {
 }
 
 /*for pallette*/
-.section1 > p {
-  text-underline-offset: 0.6em;
+.section1 h4 {
+  color: rgb(94, 91, 91);
+  text-underline-offset: 0.4em;
   text-decoration: underline rgb(176, 240, 176) 2px;
+  font-size: 15px;
+  margin: 0;
 }
 
-.section1 button {
+.section1 .button {
   width: 370px;
-  height: 80px;
-  border-radius: 25px 25px;
+  height: 65px;
+  border-radius: 15px 15px;
   border: none;
   cursor: pointer;
-  display: flex;
-  flex-direction: column;
+  padding: 0 20px;
+  margin-top: 25px;
+  background-color: #ffff;
+  padding: 8px 20px 0px 14px;
+}
+
+.section1 span {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.section1 p {
+  color: rgb(94, 91, 91);
+  font-size: 13px;
 }
 
 .section1 .ingredients {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 26px;
 }
 /*  ------------------------------------*/
 footer {
@@ -356,6 +371,7 @@ footer a {
 .location .map,
 aside,
 main,
+.section1,
 footer .container2 {
   padding-left: 20px;
   padding-right: 20px;
