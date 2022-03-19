@@ -38,12 +38,27 @@ header img {
   margin-bottom: 10px;
 }
 
+/* rule for palette*/
+.header2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-right: 80px;
+}
+
 .container {
   max-width: 1330px;
   display: flex;
   flex-direction: column;
   gap: 34px;
   background-color: var(--gray);
+}
+/* rule for palette*/
+.container2 {
+  max-width: 1330px;
+  display: flex;
+  flex-direction: column;
+  gap: 90px;
 }
 
 .location {
@@ -146,14 +161,6 @@ aside .order button i:first-child {
 aside i:nth-child(2) {
   font-size: 20px;
 }
-/*aside .order button i:nth-child(2) {
-  color: grey;
-  font-size: 20px;
-}*/
-
-/*aside .order button b {
-  color: var(--purple);
-}*/
 
 main .submain {
   /*background-color: var(--gray);*/
@@ -183,11 +190,19 @@ main .submain {
   font-weight: bold;
 }
 
-main img {
+main .card img {
   border-radius: 20px 20px 0px 0px;
   height: 181px;
   width: 100%;
   padding-top: 7px;
+  object-fit: cover;
+  display: block;
+}
+
+/* rules for pallette*/
+.opening .card img {
+  height: 225px;
+  width: 100%;
   object-fit: cover;
   display: block;
 }
@@ -205,9 +220,37 @@ main .restaurant {
   padding-top: 5px;
 }
 
+/* rules for pallette*/
+
+.opening .restaurant {
+  padding: 1px 12px;
+  /*background-color: rgb(160, 76, 76);*/
+  border-radius: 36px 36px 0px 0px;
+  position: absolute;
+  width: 100%;
+  top: 195px;
+  background-color: var(--gray);
+}
+
+.opening .restaurant .tittle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.opening .restaurant i {
+  margin-right: 22px;
+}
+
 main .restaurant h4 {
   margin: 0;
   flex-basis: 72%;
+}
+
+/*for pallette*/
+.opening h4 {
+  font-size: 25px;
+  font-style: italic;
 }
 
 main .restaurant p {
@@ -219,6 +262,7 @@ main .restaurant p {
   bottom: 25px;
   right: 25px;
 }
+
 .card input {
   position: absolute !important;
   width: 1px !important;
@@ -238,9 +282,12 @@ main .restaurant p {
   cursor: pointer;
 }
 
+/*for pallette*/
+
 .card input + i + i {
   display: none;
 }
+
 .card input:checked + i {
   display: none;
 }
@@ -249,6 +296,28 @@ main .restaurant p {
   color: var(--purple);
 }
 
+/*for pallette*/
+.section1 > p {
+  text-underline-offset: 0.6em;
+  text-decoration: underline rgb(176, 240, 176) 2px;
+}
+
+.section1 button {
+  width: 370px;
+  height: 80px;
+  border-radius: 25px 25px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+
+.section1 .ingredients {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/*  ------------------------------------*/
 footer {
   /*margin-top: 60px;*/
   color: #ffff;
