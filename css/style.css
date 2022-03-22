@@ -15,6 +15,7 @@
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin: 0 auto;
+
   /*background: url(/Homepage.png) top center no-repeat;*/
 }
 
@@ -58,7 +59,7 @@ header img {
   max-width: 1330px;
   display: flex;
   flex-direction: column;
-  gap: 90px;
+  gap: 65px;
   margin: 0 auto;
   background-color: var(--gray);
 }
@@ -92,7 +93,8 @@ header img {
   text-align: center;
 }
 
-.content button {
+.content button,
+.section2 button {
   background-color: var(--purple);
   width: 221px;
   height: 52px;
@@ -108,6 +110,13 @@ header img {
 }
 
 .content button:hover {
+  transform: scale(1);
+  background: linear-gradient(90deg, #ff72c0, #755bea);
+  box-shadow: 8px 8px 6px #b8d6f7;
+}
+
+/* for pallette*/
+.section2 button:hover {
   transform: scale(1);
   background: linear-gradient(90deg, #ff72c0, #755bea);
   box-shadow: 8px 8px 6px #b8d6f7;
@@ -296,12 +305,38 @@ main .restaurant p {
 }
 
 /*for pallette*/
-.section1 h4 {
+
+.section1 {
+  gap: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.section2 {
+  margin: 0 auto;
+}
+
+.section1 nav a {
   color: rgb(94, 91, 91);
-  text-underline-offset: 0.4em;
-  text-decoration: underline rgb(176, 240, 176) 2px;
+  /*text-underline-offset: 0.4em;
+  text-decoration: underline lightseagreen;*/
   font-size: 15px;
   margin: 0;
+  margin-bottom: 6px;
+  display: inline-block;
+  position: relative;
+  padding: 0px 0px 8px;
+  cursor: auto;
+}
+
+.section1 nav a:first-child::before {
+  position: absolute;
+  content: "";
+  bottom: 2px;
+  left: 0;
+  background-color: rgba(129, 221, 221, 0.76);
+  width: 44px;
+  height: 3px;
 }
 
 .section1 .button {
@@ -310,10 +345,10 @@ main .restaurant p {
   border-radius: 15px 15px;
   border: none;
   cursor: pointer;
-  padding: 0 20px;
-  margin-top: 25px;
+  /*margin-top: 25px;*/
   background-color: #ffff;
-  padding: 8px 20px 0px 14px;
+  padding: 6px 20px 0px 14px;
+  overflow: hidden;
 }
 
 .section1 span {
@@ -321,16 +356,75 @@ main .restaurant p {
   font-weight: bold;
 }
 
-.section1 p {
-  color: rgb(94, 91, 91);
-  font-size: 13px;
+/*.section1 input {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}*/
+
+.section1 .box {
+  width: 10px;
+  /* 70*/
+  height: 67px;
+  justify-content: flex-end;
+  background-color: lightseagreen;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0px 15px 15px 0px;
+  transform: translateX(136px) rotate(180deg);
+  margin-top: -24px;
+  transition: all 0.7s ease;
+  opacity: 0;
 }
 
-.section1 .ingredients {
+.section1 .button:hover .box {
+  transform: translateX(20px) rotate(0deg);
+  width: 50px;
+  margin-left: 60px;
+  opacity: 1;
+  overflow: visible;
+}
+.section1 .box i {
+  color: #ffff;
+  font-size: 20px;
+}
+
+.section1 .foot {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.section1 p {
+  color: rgb(94, 91, 91);
+  font-size: 13px;
+  width: 275px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/*.section1 .button:hover p {
+  overflow: visible;
+}*/
+
+.section1 h5 {
+  margin: 0;
+  margin-right: -42px;
+}
+
+.section1 .ingredients {
+  /*display: flex;
+  justify-content: space-between;
+  align-items: center;*/
   height: 26px;
+  /*overflow: hidden;*/
 }
 /*  ------------------------------------*/
 footer {
@@ -338,16 +432,16 @@ footer {
   color: #ffff;
 }
 
-footer .container2 {
+footer .container3 {
   background-color: #303030;
   padding: 20px 0px;
 }
 
-footer .container2 i {
+footer .container3 i {
   width: 27px;
 }
 
-footer .container2 b {
+footer .container3 b {
   margin-right: 8px;
   font-size: 13px;
 }
@@ -372,7 +466,8 @@ footer a {
 aside,
 main,
 .section1,
-footer .container2 {
+.section2,
+footer .container3 {
   padding-left: 20px;
   padding-right: 20px;
 }
