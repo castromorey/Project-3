@@ -30,7 +30,7 @@ body {
   opacity: 1;
   display: flex;
   justify-content: center;
-  animation: loader 1s ease 2s;
+  animation: loader 1s ease 3s;
 }
 
 .loader span {
@@ -60,6 +60,20 @@ body {
   100% {
     transform: rotate(360deg);
   }
+}
+
+.loader::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  z-index: -1;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  animation: loader 1s ease 3s infinite;
 }
 
 a {
@@ -358,7 +372,10 @@ main .restaurant p {
 
 /*for pallette*/
 
-.section1 {
+.categories,
+.bgroup-1,
+.bgroup-2,
+.bgroup-3 {
   gap: 15px;
   display: flex;
   flex-direction: column;
@@ -368,11 +385,11 @@ main .restaurant p {
   margin: 0 auto;
 }
 
-.section1 header {
+.categories header {
   text-align: left;
 }
 
-.section1 header h4 {
+.categories header h4 {
   color: rgb(94, 91, 91);
   font-size: 15px;
   margin: 0;
@@ -383,7 +400,7 @@ main .restaurant p {
   /*cursor: auto;*/
 }
 
-.section1 header h4::before {
+.categories header h4::before {
   position: absolute;
   content: "";
   bottom: 2px;
@@ -393,7 +410,7 @@ main .restaurant p {
   height: 3px;
 }
 
-.section1 .button {
+.categories .button {
   width: 100%;
   height: 65px;
   border-radius: 15px 15px;
@@ -404,12 +421,12 @@ main .restaurant p {
   overflow: hidden;
 }
 
-.section1 span {
+.categories span {
   font-size: 15px;
   font-weight: bold;
 }
 
-.section1 .box {
+.categories .box {
   width: 54px;
   height: 67px;
   justify-content: flex-end;
@@ -423,28 +440,28 @@ main .restaurant p {
   transition: all 0.7s ease;
 }
 
-.section1 .button:hover .box {
+.categories .button:hover .box {
   transform: translateX(20px);
   margin-left: 60px;
   overflow: visible;
 }
-.section1 .box i {
+.categories .box i {
   color: #ffff;
   font-size: 20px;
   transform: rotate(180deg);
   transition: all 0.5s ease 0.3s;
 }
 
-.section1 .button:hover .box i {
+.categories .button:hover .box i {
   transform: rotate(0deg);
 }
 
-.section1 .foot {
+.categories .foot {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.section1 p {
+.categories p {
   color: rgb(94, 91, 91);
   font-size: 13px;
   width: 275px;
@@ -453,16 +470,16 @@ main .restaurant p {
   text-overflow: ellipsis;
 }
 
-/*.section1 .button:hover p {
+/*.categories .button:hover p {
   overflow: visible;
 }*/
 
-.section1 h5 {
+.categories h5 {
   margin: 0;
   margin-right: -75px;
 }
 
-.section1 .ingredients {
+.categories .ingredients {
   /*display: flex;
   justify-content: space-between;
   align-items: center;*/
@@ -470,27 +487,26 @@ main .restaurant p {
   /*overflow: hidden;*/
 }
 
-.section1 .button {
+.categories .bgroup-1 {
   animation-name: slideIn;
-  animation-duration: 2s;
-  animation-timing-function: ease;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
 
-.section1 .button:nth-child(1) {
-  transition-delay: 100ms;
+.categories .bgroup-2 {
+  animation-name: slideIn;
+  animation-duration: 3s;
+  animation-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
 
-.section1 .button:nth-child(2) {
-  transition-delay: 300ms;
+.categories .bgroup-3 {
+  animation-name: slideIn;
+  animation-duration: 5s;
+  animation-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
 
-.section1 .button:nth-child(3) {
-  transition-delay: 500ms;
-}
-
-.section1 .button:nth-child(4) {
-  transition-delay: 700ms;
-}
+/*.categories .button:nth-child(1) {
+  transition-delay: 100ms;*/
 
 @keyframes slideIn {
   0% {
@@ -503,7 +519,6 @@ main .restaurant p {
   }
 }
 
-/*  ------------------------------------*/
 footer {
   /*margin-top: 60px;*/
   color: #ffff;
@@ -542,7 +557,7 @@ footer a {
 .location .map,
 aside,
 main,
-.section1,
+.categories,
 .section2,
 footer .container3 {
   padding-left: 20px;
