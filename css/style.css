@@ -114,15 +114,6 @@ header img {
   gap: 34px;
   background-color: var(--gray);
 }
-/* rule for palette*/
-.container2 {
-  max-width: 1330px;
-  display: flex;
-  flex-direction: column;
-  gap: 65px;
-  margin: 0 auto;
-  background-color: var(--gray);
-}
 
 .location {
   background-color: var(--gray);
@@ -247,7 +238,7 @@ main .submain {
   align-items: center;
   padding-bottom: 25px;
 }
-.card {
+main .submain .card {
   position: relative;
   cursor: pointer;
   width: 100%;
@@ -548,7 +539,9 @@ main .restaurant p {
 }
 
 footer {
+  width: 100%;
   /*margin-top: 60px;*/
+  /*height: 100%;*/
   color: #ffff;
 }
 
@@ -561,10 +554,10 @@ footer .container3 i {
   width: 27px;
 }
 
-footer .container3 b {
+/*footer .container3 b {
   margin-right: 8px;
   font-size: 13px;
-}
+}*/
 
 footer div h3 {
   font-style: italic;
@@ -593,42 +586,56 @@ footer .container3 {
 }
 
 @media screen and (min-width: 768px) {
-  .container {
+  /*.container {
     margin: 0 auto;
-  }
+  }*/
   aside .order {
     display: flex;
     gap: 18px;
   }
+}
+aside .order button {
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0;
+  gap: 12px;
+}
 
-  aside .order button {
-    justify-content: flex-start;
-    align-items: center;
+aside .order button i:first-child {
+  margin-left: -10px;
+}
+
+main .submain {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+/*.card {
+  width: 48.5%;
+}*/
+
+footer {
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* footer .container3 {
+    margin: 0 auto;
     padding: 0;
-    gap: 12px;
-  }
+   }*/
 
-  aside .order button i:first-child {
-    margin-left: -10px;
-  }
+/*.container3 {
 
-  main .submain {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 
-  main .restaurant {
-    width: 350px;
-  }
 
-  main img {
-    height: 188px;
-    width: 100%;
-  }
+  background-color: var(--gray);
+}*/
 
-  footer .container2 {
+/*footer .container3 {
     padding: 0px 0px 23px 0px;
   }
 
@@ -637,19 +644,19 @@ footer .container3 {
     padding-top: 10px;
   }
 
-  footer .container2 ul {
+  footer .container3 ul {
     display: flex;
     justify-content: space-evenly;
   }
 
-  footer .container2 i {
+  footer .container3 i {
     margin-right: 3px;
   }
 
-  footer .container2 b {
+  footer .container3 b {
     margin-right: 3px;
   }
-}
+}*/
 
 @media screen and (min-width: 992px) {
   aside .order {
