@@ -12,18 +12,13 @@
       crossorigin="anonymous"
     ></script>
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Ultra&display=swap"
-      rel="stylesheet"
-    />
+    <link href="" rel="stylesheet" />
   </head>
 
   <body>
-    <!--
- <div class="loader">
+    <!--<div class="loader">
       <span>Loading</span>
-    </div>
-    -->
+    </div>-->
 
     <header class="header">
       <img src="./images/ohmyfood.png" alt="OhMyFood" />
@@ -164,5 +159,13 @@
         </div>
       </footer>
     </div>
+
+    <script>
+      const body = document.body;
+      body.classList.add("loading");
+      window.addEventListener("load", () =>
+        setTimeout(() => body.classList.remove("loading"), 2500)
+      );
+    </script>
   </body>
 </html>

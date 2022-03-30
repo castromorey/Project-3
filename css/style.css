@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css2?family=Ultra&display=swap);
+
 *,
 *::before,
 *::after {
@@ -13,7 +15,7 @@
 }
 
 body {
-  font-family: verdana, "Raleway", sans-serif, "Ultra";
+  font-family: verdana, "Raleway", sans-serif;
   margin: 0 auto;
 
   /*background: url(/Homepage.png) top center no-repeat;*/
@@ -26,12 +28,17 @@ body {
   width: 100%;
   height: 100%;
   background-color: #ffff;
-  z-index: 9999;
-  opacity: 1;
+  z-index: -1;
+  opacity: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: loader 1s ease 3s;
+  /* animation: loader 1s ease 3s; */
+}
+
+.loading .loader {
+  z-index: 9999;
+  opacity: 1;
 }
 
 /*.loader .clean {
@@ -53,7 +60,7 @@ body {
   border-radius: 50%;
   width: 120px;
   height: 120px;
-  animation: spin 4s linear;
+  animation: spin 2s linear;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -256,6 +263,8 @@ main .submain .card {
 
 .opening .card {
   cursor: auto;
+  position: relative;
+  margin-bottom: 20px;
 }
 
 .card span {
@@ -341,7 +350,8 @@ main .restaurant h4 {
 
 /*for pallette*/
 .opening h4 {
-  font-size: 25px;
+  font-size: 23px;
+  font-family: "Ultra", sans-serif;
   font-style: italic;
 }
 
@@ -415,8 +425,8 @@ main .restaurant p {
 .categories header h4 {
   color: rgb(94, 91, 91);
   font-size: 15px;
-  margin: 0;
-  margin-bottom: 6px;
+  /*margin: 0;*/
+  margin-bottom: 1px;
   display: inline-block;
   position: relative;
   padding: 0px 0px 8px;
@@ -464,12 +474,15 @@ main .restaurant p {
   align-items: center;
   border-radius: 0px 15px 15px 0px;
   transform: translateX(136px);
+  -moz-transform: translateX(136px);
   margin-top: -24px;
   transition: all 0.7s ease;
+  -moz-transition: all 0.7s ease;
 }
 
 .categories .button:hover .box {
   transform: translateX(20px);
+  -moz-transform: translateX(20px);
   margin-left: 60px;
   overflow: visible;
 }
@@ -477,11 +490,14 @@ main .restaurant p {
   color: #ffff;
   font-size: 20px;
   transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
   transition: all 0.5s ease 0.3s;
+  -moz-transition: all 0.5s ease 0.3s;
 }
 
 .categories .button:hover .box i {
   transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
 }
 
 .categories .foot {
@@ -601,7 +617,7 @@ footer .container3 {
 
   /* For restaurants*/
   .opening .restaurant .tittle {
-    justify-content: space-around;
+    justify-content: space-evenly;
   }
 
   .opening .restaurant i {
@@ -661,7 +677,7 @@ footer .container3 {
 
   footer .container3 {
     padding: 0px 0px 23px 0px;
-    height: 265px;
+    /* height: 265px;*/
   }
 
   footer h3 {
@@ -682,9 +698,9 @@ footer .container3 {
 @media screen and (min-width: 992px) {
   /* For restaurants*/
 
-  .opening .restaurant {
+  /* .opening .restaurant {
     width: 69.9%;
-  }
+  } */
 
   .opening .restaurant .tittle {
     justify-content: space-evenly;
@@ -704,9 +720,9 @@ footer .container3 {
     margin-left: 20px;
   }
 
-  footer .container3 {
+  /*footer .container3 {
     height: 139px;
-  }
+  }*/
 
   /*aside .order {
     justify-content: space-between;
