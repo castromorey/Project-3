@@ -325,22 +325,21 @@ main .restaurant {
   background-color: var(--gray);
 }
 
-.opening .restaurant .tittle {
+/*.opening .restaurant .tittle {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
+}*/
 
-.opening .restaurant i {
+/*.opening .restaurant i {
   margin-right: 22px;
-  /*cursor: pointer;*/
   transition: color 0.99s linear;
   font-size: 24px;
 }
 
 .opening .restaurant i:hover {
   color: var(--purple);
-}
+}*/
 
 main .restaurant h4 {
   /*flex-basis: 72%;*/
@@ -353,6 +352,7 @@ main .restaurant h4 {
   font-size: 23px;
   font-family: "Ultra", sans-serif;
   font-style: italic;
+  /*padding-left: 8px;*/
 }
 
 main .restaurant p {
@@ -360,11 +360,18 @@ main .restaurant p {
   margin-top: 5px;
   color: rgb(94, 91, 91);
 }
-.card label {
+.submain .card label {
   position: absolute;
   bottom: 25px;
   right: 25px;
 }
+
+.opening .card label {
+  position: absolute;
+  bottom: 30px;
+  right: 25px;
+}
+
 
 .card input {
   position: absolute !important;
@@ -615,14 +622,24 @@ footer .container3 {
     margin-right: 100px;
   }
 
-  /* For restaurants*/
-  .opening .restaurant .tittle {
-    justify-content: space-evenly;
+  .opening h4{
+    display: block;
+    margin-left: 122px;
   }
+  
 
-  .opening .restaurant i {
+  /* For restaurants*/
+  /*.restaurant .tittle {
+    margin-left: 93px;
+  }*/
+
+  /*.opening .restaurant i {
     margin-left: 114px;
-  }
+  }*/
+
+  .opening .card label {
+    right: 136px;
+}
 
   aside .order {
     display: flex;
@@ -696,24 +713,23 @@ footer .container3 {
 }
 
 @media screen and (min-width: 992px) {
-  /* For restaurants*/
-
-  /* .opening .restaurant {
-    width: 69.9%;
-  } */
-
-  .opening .restaurant .tittle {
-    justify-content: space-evenly;
+  
+  .opening h4{
+    display: block;
+    margin-left: 385px;
   }
-
-  .header2 {
+  
+  .opening .card label {
+    right: 400px;
+   }
+  /*.header2 {
     justify-content: space-evenly;
     padding-right: 400px;
-  }
-  .opening .restaurant i {
+  }*/
+  /*.opening .restaurant i {
     margin: 0;
     margin-left: -100px;
-  }
+  }*/
 
   /*end restaurants*/
   main h3 {
