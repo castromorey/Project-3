@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css2?family=Ultra&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Shrikhand&display=swap);
 
 *,
 *::before,
@@ -15,7 +15,7 @@
 }
 
 body {
-  font-family: verdana, "Raleway", sans-serif;
+  font-family:  "Roboto", verdana, "Raleway", sans-serif;
   margin: 0 auto;
 
 }
@@ -196,6 +196,7 @@ aside .order button {
   gap: 22px;
   margin-bottom: 25px;
   transition: all 600ms;
+
   box-shadow: 6px 6px 6px 0px rgb(0 0 0 / 9%);
 }
 
@@ -301,8 +302,8 @@ main .restaurant h4 {
 /*for pallette*/
 .opening h4 {
   font-size: 23px;
-  font-family: "Ultra", sans-serif;
-  font-style: italic;
+  font-family: "Shrikhand", sans-serif;
+  /*font-style: italic;*/
 }
 
 main .restaurant p {
