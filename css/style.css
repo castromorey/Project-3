@@ -18,7 +18,6 @@ body {
   font-family: verdana, "Raleway", sans-serif;
   margin: 0 auto;
 
-  /*background: url(/Homepage.png) top center no-repeat;*/
 }
 
 .loader {
@@ -33,26 +32,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* animation: loader 1s ease 3s; */
 }
 
 .loading .loader {
   z-index: 9999;
   opacity: 1;
 }
-
-/*.loader .clean {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: transparent;
-  z-index: 9999;
-  opacity: 0;
-  display: flex;
-  animation: clean 1s ease 3s infinite;
-}*/
 
 .loader span {
   border: 16px solid #f3f3f3;
@@ -134,7 +119,6 @@ header img {
 
 .location {
   background-color: var(--gray);
-  /*height: 340px;*/
 }
 
 .location .map {
@@ -172,7 +156,6 @@ header img {
   border-radius: 25px 25px;
   border: none;
   cursor: pointer;
-  /*transform: scale(0.8);*/
   transition-property: transform;
   transition-duration: 1000ms;
   box-shadow: 6px 6px 6px 0px rgb(0 0 0 / 15%);
@@ -180,14 +163,12 @@ header img {
 }
 
 .content button:hover {
-  /*transform: scale(1);*/
   background: linear-gradient(90deg, #ff72c0, #755bea);
   box-shadow: 8px 8px 6px #b8d6f7;
 }
 
 /* for pallette*/
 .section2 button:hover {
-  /*transform: scale(1);*/
   background: linear-gradient(90deg, #ff72c0, #755bea);
   box-shadow: 8px 8px 6px #b8d6f7;
 }
@@ -224,14 +205,9 @@ aside i {
 
 aside .order button:hover,
 aside .order button:hover i {
-  /*transform: translate(-5px, -5px);*/
   background-color: #dfd6eb;
   color: var(--purple);
 }
-/*aside .order button:hover {
-  box-shadow: 8px 8px 6px #d3e2f1;
-}*/
-
 aside .order button span {
   color: #000;
 }
@@ -248,7 +224,6 @@ aside i:nth-child(2) {
 }
 
 main .submain {
-  /*background-color: var(--gray);*/
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -300,17 +275,9 @@ main .card img {
 }
 
 main .restaurant {
-  /*display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-   justify-content: space-between;*/
-
   padding: 1px 12px;
   border-radius: 0px 0px 15px 15px;
   background-color: white;
-  /* width: 364px;*/
-
-  /*cursor: pointer;*/
   padding-top: 5px;
 }
 
@@ -325,22 +292,6 @@ main .restaurant {
   background-color: var(--gray);
 }
 
-/*.opening .restaurant .tittle {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}*/
-
-/*.opening .restaurant i {
-  margin-right: 22px;
-  transition: color 0.99s linear;
-  font-size: 24px;
-}
-
-.opening .restaurant i:hover {
-  color: var(--purple);
-}*/
-
 main .restaurant h4 {
   /*flex-basis: 72%;*/
   margin: 0;
@@ -352,7 +303,6 @@ main .restaurant h4 {
   font-size: 23px;
   font-family: "Ultra", sans-serif;
   font-style: italic;
-  /*padding-left: 8px;*/
 }
 
 main .restaurant p {
@@ -432,12 +382,10 @@ main .restaurant p {
 .categories header h4 {
   color: rgb(94, 91, 91);
   font-size: 15px;
-  /*margin: 0;*/
   margin-bottom: 1px;
   display: inline-block;
   position: relative;
   padding: 0px 0px 8px;
-  /*cursor: auto;*/
 }
 
 .categories header h4::before {
@@ -528,11 +476,7 @@ main .restaurant p {
 }
 
 .categories .ingredients {
-  /*display: flex;
-  justify-content: space-between;
-  align-items: center;*/
   height: 26px;
-  /*overflow: hidden;*/
 }
 
 .categories .bgroup-1 {
@@ -553,9 +497,6 @@ main .restaurant p {
   animation-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
 
-/*.categories .button:nth-child(1) {
-  transition-delay: 100ms;*/
-
 @keyframes slideIn {
   0% {
     opacity: 0;
@@ -568,7 +509,6 @@ main .restaurant p {
 }
 
 footer {
-  /*margin-top: 60px;*/
   color: #ffff;
 }
 
@@ -626,16 +566,6 @@ footer .container3 {
     display: block;
     margin-left: 122px;
   }
-  
-
-  /* For restaurants*/
-  /*.restaurant .tittle {
-    margin-left: 93px;
-  }*/
-
-  /*.opening .restaurant i {
-    margin-left: 114px;
-  }*/
 
   .opening .card label {
     right: 136px;
@@ -694,7 +624,6 @@ footer .container3 {
 
   footer .container3 {
     padding: 0px 0px 23px 0px;
-    /* height: 265px;*/
   }
 
   footer h3 {
@@ -726,35 +655,8 @@ footer .container3 {
     justify-content: space-evenly;
     padding-right: 400px;
   }
-  /*.opening .restaurant i {
-    margin: 0;
-    margin-left: -100px;
-  }*/
 
-  /*end restaurants*/
   main h3 {
     margin-left: 20px;
   }
-
-  /*footer .container3 {
-    height: 139px;
-  }*/
-
-  /*aside .order {
-    justify-content: space-between;
-  }
-
-  main {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  main img {
-    height: 245px;
-    width: 305px;
-  }
-
-  main .restaurant {
-    width: 305px;
-  }*/
 }
