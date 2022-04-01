@@ -1,4 +1,4 @@
-## **Welcome to Ohmyfood Repository**
+## **_Welcome to Project-3 Repository_**
 
 ---
 
@@ -8,8 +8,12 @@
 
 ### **Course:** Web Developer
 
-### **E-mail:** castromorey@gmail.com
+### **e-mail:** castromorey@gmail.com
 
 ---
 
-#### **Link:** https://castromorey.github.io/Project-3/
+---
+
+[GitHub Web Page Link ](https://castromorey.github.io/Project-3/)
+
+---
