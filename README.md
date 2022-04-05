@@ -14,7 +14,7 @@
 
 ---
 
-[GitHub Web Page Link](https://castromorey.github.io/Project-3/)
+[GitHub Project3 Web Page Link](https://castromorey.github.io/Project-3/)
 
 ---
 
