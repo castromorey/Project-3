@@ -435,7 +435,7 @@ main .restaurant p {
   border-radius: 0px 15px 15px 0px;
   transform: translateX(136px);
   -moz-transform: translateX(136px);
-  margin-top: -24px;
+  margin-top: -30px;
   transition: all 0.7s ease;
   -moz-transition: all 0.7s ease;
 }
